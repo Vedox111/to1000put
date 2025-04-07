@@ -9,7 +9,6 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-${{ Postgres.DATABASE_URL }}
 // Middleware
 app.use(bodyParser.json({ limit: '10mb' }));
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
