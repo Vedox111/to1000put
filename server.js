@@ -9,19 +9,7 @@ const path = require('path');
 const app = express();
 const port = 3000;
 
-require("dotenv").config();
-const { Client } = require("pg");
-
-const client = new Client({
-  connectionString: process.env.DATABASE_URL,
-  ssl: { rejectUnauthorized: false }, // Railway traži ovo
-});
-
-client.connect()
-  .then(() => console.log("✅ Connected to PostgreSQL"))
-  .catch((err) => console.error("❌ Connection error", err));
-
-
+${{ Postgres.DATABASE_URL }}
 // Middleware
 app.use(bodyParser.json({ limit: '10mb' }));
 app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }));
