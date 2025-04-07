@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAEKWONDO NUR</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"> <!-- Link za CSS -->
+</head>
+<body>
+    <div class="header">
+                <!-- Hamburger Menu -->
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+        <div class="naviga">
+            <a href="#oklubu">O KLUBU</a>
+            <a href="#novosti">NOVOSTI</a>
+            <a href="#raspored">TERMINI</a>
+            <a href="file:///C:/Users/user/Desktop/TKD/ste/kakanjopen.html">KAKANJ OPEN</a>
+        </div>
+        <div class="naslov">
+            <h1>TAEKWONDO NUR</h1>
+        </div>
+        <div class="javljanje">
+            <div class="nav">
+                <a href="tel:+38762619113">KONTAKTIRAJTE NAS</a>
+            </div>
+            <a  href="https://www.instagram.com/taekwondonur/">
+                <img  src="img/inslogo.png" >
+            </a>
+            <a href="https://www.facebook.com/taekwondonurr/?locale=hr_HR">
+                <img src="img/facebook-logo.png"  >
+            </a>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="mobile-menu">
+            <a href="#oklubu" onclick="toggleMenu()">O KLUBU</a>
+            <a href="#novosti" onclick="toggleMenu()">NOVOSTI</a>
+            <a href="#raspored" onclick="toggleMenu()">TERMINI</a>
+            <a href="#kakanjopen" onclick="toggleMenu()">KAKANJ OPEN</a>
+            <a href="tel:+38762619113" onclick="toggleMenu()">KONTAKTIRAJTE NAS</a>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/taekwondonur/">
+                    <img src="img/inslogo.png" style="height: 40px;">
+                </a>
+                <a href="https://www.facebook.com/taekwondonurr/?locale=hr_HR">
+                    <img src="img/facebook-logo.png" style="height: 40px;">
+                </a>
+            </div>
+
+        </div>
+    </div>
+    
+    <section class="container">
+        <div class="slider-wrapper">
+            <div class="galerija">
+                <img class="prikaz" src="img/naslovna.png" alt="Prva slika">
+                <img class="prikaz" src="img/pocetna.png" alt="Druga slika">
+                <img class="prikaz" src="img/prostorijekluba.jpg" alt="Treća slika">
+            </div>
+            <div class="slider-nav">
+                <a  onclick="promeniSliku(0)"></a>
+                <a  onclick="promeniSliku(1)"></a>
+                <a  onclick="promeniSliku(2)"></a>
+            </div>
+            <div class="slikalogo">
+                <img  src="img/logo-removebg-preview.png" >
+            </div>
+        </div>
+    </section>
+
+    <section id="oklubu">
+    <div class="notice">
+        <div class="noticedrugi">
+            <div class="naslovi">
+                <h2 >Taekwondo klub Nur</h2>
+                <h2 class="begikofolh3">BESPLATAN UPIS</h2>
+            </div>
+            <div class="paragrafi">
+                <pre>
+Taekwondo klub NUR iz Kaknja već više od dvije decenije djeluje kao jedan od najaktivnijih i najuspješnijih sportskih kolektiva u lokalnoj zajednici. Kroz dugogodišnji rad, klub je izgradio reputaciju ozbiljne i organizovane sportske porodice koja posebnu pažnju posvećuje razvoju mladih, disciplini, timskom duhu i sportskom ponašanju. Treneri i rukovodstvo kluba ulažu velike napore kako bi članovima omogućili kvalitetne uslove za treniranje i napredovanje, a rezultati tog rada vidljivi su kroz brojne uspjehe, priznanja i medalje koje su njihovi takmičari godinama osvajali širom BiH i van njenih granica. Klub okuplja djecu, mlade i odrasle različitih uzrasta, te kroz redovne treninge i nastupe potiče razvoj zdravih životnih navika, samopouzdanja i odgovornosti. Osim što se ističe u sportskom smislu, Taekwondo klub NUR aktivno učestvuje i u društveno-korisnim projektima, organizujući edukativne radionice, ekološke akcije i humanitarne aktivnosti, čime dodatno doprinosi razvoju zajednice. Njihova misija nije samo stvaranje uspješnih sportista, već i odgoj kvalitetnih i odgovornih pojedinaca, što ih čini jednim od najvažnijih nosilaca sportskog i društvenog života u Kaknju.
+                </pre>
+                         <h2 class="begikofolh3telefon">BESPLATAN UPIS</h2>
+                         <pre>
+Upis u Taekwondo klub NUR iz Kaknja otvoren je tokom cijele godine za sve uzraste – djecu, mlade i odrasle koji žele postati dio ozbiljnog i uspješnog sportskog kolektiva. Klub pruža sigurno i podržavajuće okruženje u kojem se kroz redovne treninge razvijaju fizička spremnost, samopouzdanje, disciplina i timski duh. Treninzi se održavaju u skladu sa uzrastom i nivom znanja, pod stručnim nadzorom licenciranih trenera sa dugogodišnjim iskustvom u radu s djecom i takmičarima. Bez obzira da li je cilj rekreativno bavljenje sportom ili profesionalno takmičenje, članovima se pruža mogućnost da napreduju vlastitim tempom. Upis je jednostavan i svi zainteresovani mogu se javiti direktno u prostorije kluba, kontaktirati trenere ili pratiti zvanične objave na društvenim mrežama kluba. Taekwondo nije samo sport, to je način života koji kroz fizičku aktivnost uči poštovanju, samokontroli i upornosti – vrijednostima koje ostaju za cijeli život. Postani dio NUR tima i kreni putem sportskog i ličnog razvoja!
+                         </pre>
+            </div>
+
+
+        </div>
+            <div class="sekcije">
+                    <!-- Lijeva strana -->
+                     <div class="naslovlokacija">
+                        <h3>Lokacije treninga</h3>
+                        <h2>Dvorane i sekcije</h2>
+                     </div>
+                    <div class="lijevastranaslika">
+                        <img  class="imglijeva" src="img/prostorijekluba.jpg"  alt="Slika 1">
+                        <div class="opisslikezapocetak">
+                            <span><h3>   Prostorije Kluba</h3> Lokacija Kluba</span>
+                            <a href="https://www.google.com/maps/place/TKD+NUR/@44.1219682,18.1091694,17z/data=!3m1!4b1!4m6!3m5!1s0x475f270225e6f591:0x2221f36df652ec3f!8m2!3d44.1219682!4d18.1117443!16s%2Fg%2F11gxw0qtyj?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                <button>Lokacija</button>
+                            </a>
+                        </div>
+                        <div class="opisslikezapocetaktelefon">
+                            <span><h3>   Prostorije Kluba</h3> Lokacija Kluba</span>
+                            <a href="https://www.google.com/maps/place/TKD+NUR/@44.1219682,18.1091694,17z/data=!3m1!4b1!4m6!3m5!1s0x475f270225e6f591:0x2221f36df652ec3f!8m2!3d44.1219682!4d18.1117443!16s%2Fg%2F11gxw0qtyj?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                <button>Lokacija</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="desnastranaslika">
+                        <div class="opisslikezapocetak">
+                            <span><h3>Sportska dvorana sala c</h3> Anes Begic sala c</span>
+                            <a href="https://www.google.com/maps/place/Dvorana+%22Anes+Begi%C4%87%22/@44.123554,18.1160875,19z/data=!4m10!1m2!2m1!1sanes+begic+!3m6!1s0x475f278a13b5ab89:0xaff4f0007e45668f!8m2!3d44.1234854!4d18.1161279!15sCgphbmVzIGJlZ2ljkgELc3BvcnRzX2NsdWLgAQA!16s%2Fg%2F11qy6wrtvn?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                <button>Lokacija</button>
+                            </a>
+                        </div>
+                        <img class="imgdesna" src="img/salac.jpg" alt="Slika 4">
+                        <div class="opisslikezapocetaktelefon">
+                            <span><h3>Sportska dvorana sala c</h3> Anes Begic sala c</span>
+                            <a href="https://www.google.com/maps/place/Dvorana+%22Anes+Begi%C4%87%22/@44.123554,18.1160875,19z/data=!4m10!1m2!2m1!1sanes+begic+!3m6!1s0x475f278a13b5ab89:0xaff4f0007e45668f!8m2!3d44.1234854!4d18.1161279!15sCgphbmVzIGJlZ2ljkgELc3BvcnRzX2NsdWLgAQA!16s%2Fg%2F11qy6wrtvn?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                <button>Lokacija</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lijevastranaslika">
+                        <img class="imglijeva" src="img/ksc.jpg" alt="Slika 2">
+                        <div class="opisslikezapocetak">
+                            <span><h3>KSC</h3>Prostor kultorno sportskog centra Kakanj</span>
+                            <a href="https://www.google.com/maps/place/Dvorana+%22Anes+Begi%C4%87%22/@44.123554,18.1160875,19z/data=!4m10!1m2!2m1!1sanes+begic+!3m6!1s0x475f278a13b5ab89:0xaff4f0007e45668f!8m2!3d44.1234854!4d18.1161279!15sCgphbmVzIGJlZ2ljkgELc3BvcnRzX2NsdWLgAQA!16s%2Fg%2F11qy6wrtvn?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                <button>Lokacija</button>
+                            </a>
+                        </div>
+                        <div class="opisslikezapocetaktelefon">
+                            <span><h3>KSC</h3>Prostor kultorno sportskog centra Kakanj</span>
+                            <a href="https://www.google.com/maps/place/Dvorana+%22Anes+Begi%C4%87%22/@44.123554,18.1160875,19z/data=!4m10!1m2!2m1!1sanes+begic+!3m6!1s0x475f278a13b5ab89:0xaff4f0007e45668f!8m2!3d44.1234854!4d18.1161279!15sCgphbmVzIGJlZ2ljkgELc3BvcnRzX2NsdWLgAQA!16s%2Fg%2F11qy6wrtvn?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                <button>Lokacija</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="desnastranaslika">
+                        <div class="opisslikezapocetak">
+                            <span><h3>Selekcija Donji Kakanj</h3> O.Š. "Ahmed Muradbegović" D. Kakanj</span>
+                            <a href="https://www.google.com/maps/place/OS+Ahmed+Muradbegovic/@44.1359845,18.0612255,15.98z/data=!4m6!3m5!1s0x475f208d7a94e3c7:0xfe2a40b74e959188!8m2!3d44.1338581!4d18.0673628!16s%2Fg%2F11f04ddcgt?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                <button>Lokacija</button>
+                            </a>
+                        </div>
+                        <img class="imgdesna" src="img/donjikakanj.JPG" alt="Slika 5">
+                        <div class="opisslikezapocetaktelefon">
+                            <span><h3>Selekcija Donji Kakanj</h3> O.Š. "Ahmed Muradbegović" D. Kakanj</span>
+                            <a href="https://www.google.com/maps/place/OS+Ahmed+Muradbegovic/@44.1359845,18.0612255,15.98z/data=!4m6!3m5!1s0x475f208d7a94e3c7:0xfe2a40b74e959188!8m2!3d44.1338581!4d18.0673628!16s%2Fg%2F11f04ddcgt?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                <button>Lokacija</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="lijevastranaslika">
+                        <img class="imglijeva" src="img/brezani.jpg" alt="Slika 3">
+                        <div class="opisslikezapocetak">
+                            <span><h3>Selekcija Brezani</h3> Osnovna škola Omer Mušić</span>
+                            <a href="https://www.google.com/maps/place/Osnovna+%C5%A1kola+%22Omer+Mu%C5%A1i%C4%87%22/@44.101269,18.1499909,18.69z/data=!4m6!3m5!1s0x475f27acd807f229:0xbb2d84ad85f89e99!8m2!3d44.1015163!4d18.1509161!16s%2Fg%2F11b8zmpkq1?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                <button>Lokacija</button>
+                            </a>
+                        </div>
+                        <div class="opisslikezapocetaktelefon">
+                            <span><h3>Selekcija Brezani</h3> Osnovna škola Omer Mušić</span>
+                            <a href="https://www.google.com/maps/place/Osnovna+%C5%A1kola+%22Omer+Mu%C5%A1i%C4%87%22/@44.101269,18.1499909,18.69z/data=!4m6!3m5!1s0x475f27acd807f229:0xbb2d84ad85f89e99!8m2!3d44.1015163!4d18.1509161!16s%2Fg%2F11b8zmpkq1?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                <button>Lokacija</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="desnastranaslika">
+                        <div class="opisslikezapocetak">
+                            <span><h3>Selekcija Trsce</h3> OŠ "Mula Mustafa Bašeskija" - PŠ Tršće</span>
+                            <a href="https://www.google.com/maps/place/Osnovna+%C5%A1kola+%22+Mula+Mustafa+Ba%C5%A1eskija%22+Tr%C5%A1%C4%87e/@44.1814858,18.1374142,19.25z/data=!4m6!3m5!1s0x475edf99087e72dd:0xce1a612749ec1a4d!8m2!3d44.1811117!4d18.1376071!16s%2Fg%2F11fnrddmqx?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                <button>Lokacija</button>
+                            </a>
+                        </div>
+                        <img class="imgdesna" src="img/trsce.jpg" alt="Slika 6">
+                        <div class="opisslikezapocetaktelefon">
+                            <span><h3>Selekcija Trsce</h3> OŠ "Mula Mustafa Bašeskija" - PŠ Tršće</span>
+                            <a href="https://www.google.com/maps/place/Osnovna+%C5%A1kola+%22+Mula+Mustafa+Ba%C5%A1eskija%22+Tr%C5%A1%C4%87e/@44.1814858,18.1374142,19.25z/data=!4m6!3m5!1s0x475edf99087e72dd:0xce1a612749ec1a4d!8m2!3d44.1811117!4d18.1376071!16s%2Fg%2F11fnrddmqx?entry=ttu&g_ep=EgoyMDI1MDMzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+                                <button>Lokacija</button>
+                            </a>
+                        </div>
+                    </div>
+            </div>
+    </div>
+                <div class="sectionathletes">
+                    <h2 class="slider-treneri-naslov">TRENERI</h2>
+            
+                    <div class="treneri-slider-okvir">
+                        <div class="treneri-slider" id="treneri-slider">
+                            <div class="treneri-slide">
+                                <div class="trener-kartica">
+                                    <img  src="img/halim.png" alt="Halim Fejzic">
+                                    <h3>HALIM FEJZIC</h3>
+                                    <p>Predsjednik kluba i glavni trener</p>
+                                    <div class="trener-dugmad">
+                                        <a href="https://www.facebook.com/halim.fejzic.9">FACEBOOK</a>
+                                    </div>
+                                </div>
+                                <div class="trener-kartica">
+                                    <img  src="img/adnan.jpg" alt="Adnan Haracic">
+                                    <h3>ADNAN HARACIC</h3>
+                                    <p>Trener</p>
+                                    <div class="trener-dugmad">
+                                        <a href="https://www.instagram.com/adnanharacic/">INSTAGRAM</a>
+                                        <a href="https://www.facebook.com/adnan.haracic.31">FACEBOOK</a>
+                                    </div>
+                                </div>
+                                <div class="trener-kartica">
+                                    <img  src="img/sedina.jpg" alt="Sedina Berbic">
+                                    <h3>SEDINA BERBIC</h3>
+                                    <p>Trener</p>
+                                    <div class="trener-dugmad">
+                                        <a href="https://www.instagram.com/sedinadb/">INSTAGRAM</a>
+                                        <a href="https://www.facebook.com/sedina.delibasicberbic">FACEBOOK</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="treneri-slide">
+                                <div class="trener-kartica">
+                                    <img  src="img/eve.jpg" alt="Trener 4">
+                                    <h3>EVELIN PILJUG</h3>
+                                    <p>Trener</p>
+                                    <div class="trener-dugmad">
+                                        <a href="https://www.instagram.com/piljug10/">INSTAGRAM</a>
+                                        <a href="https://www.facebook.com/evelinpiljug123">FACEBOOK</a>
+                                    </div>
+                                </div>
+                                <div class="trener-kartica">
+                                    <img  src="img/amir.png" alt="Trener 5">
+                                    <h3>AMIR ABAZ</h3>
+                                    <p>Pomocni Trener</p>
+                                    <div class="trener-dugmad">
+                                        <a href="https://www.instagram.com/abaaz_amir/">INSTAGRAM</a>
+                                        <a href="https://www.facebook.com/amir.abaz.148">FACEBOOK</a>
+                                    </div>
+                                </div>
+                                <div class="trener-kartica">
+                                    <img  src="img/merjema.png" alt="Trener 6">
+                                    <h3>MERJEMA FEJZIC</h3>
+                                    <p>Pomocni Trener</p>
+                                    <div class="trener-dugmad">
+                                        <a href="https://www.instagram.com/m.fejzic7/">INSTAGRAM</a>
+                                        <a href="https://www.facebook.com/merjema.fejzic.33">FACEBOOK</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="trener-dots">
+                        <span class="trener-dot aktivan" onclick="promijeniTrenerSlide(0)"></span>
+                        <span class="trener-dot" onclick="promijeniTrenerSlide(1)"></span>
+                    </div>
+                </div>
+
+                <div class="sectionathletestelefon">
+                    <h2 class="slider-treneri-naslovtelefon">TRENERI</h2>
+
+                    <div class="treneri-slider-okvir">
+                        <div class="treneri-slidertelefon" id="treneri-slidertelefon">
+                            <div class="treneri-slidetelefon">
+                                <div class="trener-karticatelefon">
+                                    <img  src="img/halim.png" alt="Halim Fejzic">
+                                    <h3>HALIM FEJZIC</h3>
+                                    <p>Predsjednik kluba i glavni trener</p>
+                                    <div class="trener-dugmad">
+                                        <a href="https://www.facebook.com/halim.fejzic.9">FACEBOOK</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="treneri-slidetelefon">
+                                <div class="trener-karticatelefon">
+                                    <img  src="img/adnan.jpg" alt="Adnan Haracic">
+                                    <h3>ADNAN HARACIC</h3>
+                                    <p>Trener</p>
+                                    <div class="trener-dugmad">
+                                        <a href="https://www.instagram.com/adnanharacic/">INSTAGRAM</a>
+                                        <a href="https://www.facebook.com/adnan.haracic.31">FACEBOOK</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="treneri-slidetelefon">
+                                <div class="trener-karticatelefon">
+                                    <img  src="img/sedina.jpg" alt="Sedina Berbic">
+                                    <h3>SEDINA BERBIC</h3>
+                                    <p>Trener</p>
+                                    <div class="trener-dugmad">
+                                        <a href="https://www.instagram.com/sedinadb/">INSTAGRAM</a>
+                                        <a href="https://www.facebook.com/sedina.delibasicberbic">FACEBOOK</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="treneri-slidetelefon">
+                                <div class="trener-karticatelefon">
+                                    <img  src="img/eve.jpg" alt="Evelin Piljug">
+                                    <h3>EVELIN PILJUG</h3>
+                                    <p>Trener</p>
+                                    <div class="trener-dugmad">
+                                        <a href="https://www.instagram.com/piljug10/">INSTAGRAM</a>
+                                        <a href="https://www.facebook.com/evelinpiljug123">FACEBOOK</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="treneri-slidetelefon">
+                                <div class="trener-karticatelefon">
+                                    <img  src="img/amir.png" alt="Amir Abaz">
+                                    <h3>AMIR ABAZ</h3>
+                                    <p>Pomocni Trener</p>
+                                    <div class="trener-dugmad">
+                                        <a href="https://www.instagram.com/abaaz_amir/">INSTAGRAM</a>
+                                        <a href="https://www.facebook.com/amir.abaz.148">FACEBOOK</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="treneri-slidetelefon">
+                                <div class="trener-karticatelefon">
+                                    <img  src="img/merjema.png" alt="Merjema Fejzic">
+                                    <h3>MERJEMA FEJZIC</h3>
+                                    <p>Pomocni Trener</p>
+                                    <div class="trener-dugmad">
+                                        <a href="https://www.instagram.com/m.fejzic7/">INSTAGRAM</a>
+                                        <a href="https://www.facebook.com/merjema.fejzic.33">FACEBOOK</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="trener-dotstelefon">
+                        <span class="trener-dottelefon aktivan" onclick="promijeniTrenerSlidetelefon(0)"></span>
+                        <span class="trener-dottelefon" onclick="promijeniTrenerSlidetelefon(1)"></span>
+                        <span class="trener-dottelefon" onclick="promijeniTrenerSlidetelefon(2)"></span>
+                        <span class="trener-dottelefon" onclick="promijeniTrenerSlidetelefon(3)"></span>
+                        <span class="trener-dottelefon" onclick="promijeniTrenerSlidetelefon(4)"></span>
+                        <span class="trener-dottelefon" onclick="promijeniTrenerSlidetelefon(5)"></span>
+                    </div>
+                </div>
+    </section>
+    <section id="novosti">
+        <div class="novosti-kontejner">
+            <h1>Novosti</h1>
+            <button  id="otvori-modal" >Dodaj Novost</button>
+            <div id="novosti-wrapper"></div>
+    <!-- Modalni prozor -->
+    <div style="display: none;" id="modal" class="modal">
+        <div class="modal-content">
+            <span class="zatvori">&times;</span>
+            <h2>Dodaj Novost</h2>
+            <form id="modal-form">
+                <label for="naslov">Naslov:</label>
+                <input type="text" id="naslov" required>
+    
+                <label for="short">Kratki Opis:</label>
+                <textarea id="short" required></textarea>
+    
+                <label for="opis">Celokupan Opis:</label>
+                <textarea id="opis" required></textarea>
+    
+                <label for="slika">Slika:</label>
+                <input type="file" id="slika" accept="image/*" required>
+                <div style="display: flex; align-items: center; justify-content: center; gap: 4px;white-space: nowrap; padding: 20px;">
+                    <label >Pinaj objavu:</label>
+                    <input style="width: 16px; height: 16px; margin: 0;" type="checkbox" id="is_pinned">
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: center; gap: 4px;white-space: nowrap; padding: 20px;">
+                    <label >Dodaj datum i vrijeme isteka:</label>
+                    <input style="width: 16px; height: 16px; margin: 0;" type="checkbox" id="has_expiry">
+                </div>
+            
+                <!-- Sekcija za datum i vrijeme isteka -->
+                <div id="expiry_section" style="display: none;">
+                    <label for="expires_date">Datum isteka:</label>
+                    <input type="date" id="expires_date">
+            
+                    <label for="expires_time">Vrijeme isteka:</label>
+                    <input type="time" id="expires_time">
+                </div>
+
+                <button type="submit">Dodaj</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Modal za Editovanje Novosti -->
+    <div id="modal-edit" class="modaledit" style="display: none;">
+        <div class="modal-contentedit">
+            <span class="zatvori" onclick="zatvoriModalmodaledit()">×</span>
+            <h2>Editovanje Novosti</h2>
+            <form id="modal-edit-form">
+                <label for="naslovzaedit">Naslov:</label>
+                <input type="text" id="naslovzaedit" placeholder="Unesite naslov novosti" required>
+    
+                <label for="shortzaedit">Kratki opis:</label>
+                <textarea id="shortzaedit" placeholder="Unesite kratak opis novosti" required></textarea>
+    
+                <label for="opiszaedit">Opis:</label>
+                <textarea id="opiszaedit" placeholder="Unesite opis novosti" required></textarea>
+    
+                <label for="slikazaedit">Izaberi sliku:</label>
+                <input type="file" id="slikazaedit" accept="image/*">
+                <img id="slika-preview"  alt="Preview slika" />
+                <input type="hidden" id="stara-slika" name="stara_slika">
+
+                <div style="display: flex; align-items: center; justify-content: center; gap: 4px;white-space: nowrap; padding: 20px;">
+                    <label >Pinaj objavu:</label>
+                    <input style="width: 16px; height: 16px; margin: 0;" type="checkbox" id="edit_is_pinned">
+                </div>
+
+                <div style="display: flex; align-items: center; justify-content: center; gap: 4px;white-space: nowrap; padding: 20px;">
+                    <label >Dodaj datum i vrijeme isteka:</label>
+                    <input style="width: 16px; height: 16px; margin: 0;" type="checkbox" id="has_expiry_edit">
+                </div>
+            
+                <!-- Sekcija za datum i vrijeme isteka -->
+                <div id="expiry_section_edit" style="display: none;">
+                    <label for="expires_date_edit">Datum isteka:</label>
+                    <input type="date" id="expires_date_edit">
+            
+                    <label for="expires_time_edit">Vrijeme isteka:</label>
+                    <input type="time" id="expires_time_edit">
+                </div>
+    
+                <button type="button" onclick="sacuvajIzmenemodaledit()">Spasi izmene</button>
+                <button type="button" onclick="zatvoriModalmodaledit()">Zatvori</button>
+            </form>
+        </div>
+    </div>
+    
+    <!-- Modal za prikaz celokupnog opisa -->
+    <!-- Modal za prikaz novosti -->
+    <div id="modalPrikazNovosti" class="modal-prikaz-novosti" style="display: none;">
+        <div class="modal-prikaz-novosti-content">
+            <span class="zatvori" onclick="zatvoriModalPrikazNovosti()">×</span>
+            <h2 id="modalPrikazNovostiNaslov"></h2>
+            <!-- Slika na vrhu -->
+            <img id="modalPrikazNovostiSlika" class="modal-prikaz-novosti-slika" style="display:none;" alt="Slika novosti">
+    
+            <!-- Tekst u skrolabilnom okviru -->
+            <div id="modalPrikazNovostiOpisContainer">
+                <p id="modalPrikazNovostiOpis"></p>
+            </div>
+            <button onclick="zatvoriModalPrikazNovosti()">Zatvori</button>
+        </div>
+    </div>
+    
+                <!-- Ovdje će se prikazivati lista novosti -->
+                <div id="novosti-lista"></div>
+                <div id="pagination" class="pagination">
+                    <button id="prev" disabled>Prethodna</button>
+                    <span id="page-number">1</span> / <span id="total-pages">1</span>
+                    <button id="next">Sledeća</button>
+                </div>
+            </div>
+    
+            <!-- Dugme za otvaranje forme za dodavanje novosti -->
+             
+        </div>
+</section>
+    <section id="raspored">
+        <div class="raspored">
+            <table class="tabela-raspored" id="raspored-tabela" border="4">
+                <!-- Redovi tabele će biti dinamički generisani -->
+            </table>
+            <button class="edit-btn" id="edit-btn" onclick="openModaltabela()">Edituj Tabelu</button>
+
+            <!-- Modal za editovanje tabele -->
+            <div id="modaltabela" class="modaltabela">
+                <div class="modal-contenttebela">
+                    <span class="close-btntabela" onclick="closeModaltebela()">&times;</span>
+                    <h2>Uredi raspored</h2>
+                    <form id="edit-form">
+                        <table class="edit-tabela" border="4">
+                            <!-- Ovdje ćemo dodati redove za editovanje -->
+                        </table>
+                        <button type="submit" class="save-btntabela">Sačuvaj izmene</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="footer">
+            <img alt="World Taekwondo Logo" src="img/logookrugli.png" />
+            <p>Taekwondo klub Nur Kakanj</p>
+            <p>Adresa:<a href="#lokacija">44C6+QMQ, Selima efendije Merdanovića, Kakanj</a> </p>
+            <p>Telefon:<a href="tel:+38762619113">+397 232 233</a></p>
+            <p>Email: tkdnur@gmail.com</p>
+            <p id="loginText">
+                Klikni ovdje za <span class="login-link" id="loginButton" onclick="openLoginWindow()">Prijavu</span>
+            </p>
+            <p style="display: none;" id="logout">
+                <button onclick="logout()">Odjavi se</button>
+            </p>
+
+    </div>
+
+    <script src="script.js"></script> <!-- Link za JavaScript -->
+    
+</body>
+</html>

@@ -1,0 +1,1583 @@
+
+body {
+     font-family: 'Roboto', sans-serif;
+     margin: 0;
+     padding: 0;
+     overflow-x: hidden;
+     background-image: url('img/pozadina.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed; /* ovo fiksira pozadinu */
+ }
+
+ .header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+     height: 40px;
+     background-color: transparent;
+     border-bottom: 1px solid #ddd;
+ }
+ .header img {
+     height: 50px;
+ }
+ .header h1{
+     color: white;
+ }
+ .nav {
+     display: flex;
+     justify-content: flex-start; /* Poravnanje lijevo */
+      align-items: center; /* Vertikalno centriranje (ako su stavke različite visine) */
+     gap: 20px;
+     margin-left: 0;
+ }
+ .naviga {
+     display: flex;
+     justify-content: flex-start; /* Poravnanje lijevo */
+      align-items: center; /* Vertikalno centriranje (ako su stavke različite visine) */
+     gap: 20px;
+     margin-left: 0;
+     text-decoration: none;
+     color: #ffffff;
+     font-weight: bold;
+     background-color: #00000085;
+     padding: 10px;
+     border: 2px solid yellow;
+     border-radius: 15px;
+ }
+ .naviga a {
+     text-decoration: none;
+     color: #ffffff;
+     font-weight: bold;
+ }
+ .nav a {
+     text-decoration: none;
+     color: #ffffff;
+     font-weight: bold;
+ }
+ .javljanje{
+     display: flex;
+     justify-content: flex-start; /* Poravnanje lijevo */
+      align-items: center; /* Vertikalno centriranje (ako su stavke različite visine) */
+     height: 40px;
+     width: 300px;
+     gap: 20px;
+     color: white;
+     background-color: #0000008a;
+     padding: 3px;
+     padding-left: 10px;
+     border: 2px solid yellow;
+     border-radius: 15px;
+ }
+ .javljanje img{
+     height: 40px;
+ }
+ .container {
+width: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow: hidden;
+border: 4px solid yellow;
+box-sizing: border-box;
+}
+
+.slider-wrapper {
+position: relative;
+width: 100%;
+height: 100%;
+overflow: hidden;
+
+}
+
+.galerija {
+position: relative;
+width: 100%;
+height: 100%;
+overflow: hidden; /* Sakriva dijelove slike koji prelaze granice */
+}
+
+.prikaz {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+transition: opacity 1s ease-in-out;
+box-sizing: border-box;
+}
+
+.prikaz.aktivna {
+opacity: 1;
+}
+
+.slika-wrap {
+position: absolute;
+width: 100%;
+height: 100%;
+border: 3px solid red;
+box-sizing: border-box;
+opacity: 0;
+transition: opacity 1s ease-in-out;
+}
+
+.slika-wrap.aktivna {
+opacity: 1;
+}
+
+
+.slider-nav {
+position: absolute;
+bottom: 30px;           
+left: 50%;
+transform: translateX(-50%);
+display: flex;
+gap: 10px;
+z-index: 10; /* Uveri se da je navigacija iznad slika */
+}
+
+.slider-nav a {
+width: 20px;
+height: 20px;
+background-color: rgba(255, 255, 255, 0.6);
+border: 2px solid white;
+border-radius: 50%;
+display: inline-block;
+cursor: pointer;
+transition: background-color 0.3s, transform 0.2s;
+}
+
+.slider-nav a:hover {
+background-color: white;
+transform: scale(1.2);
+}
+
+.slider-nav a.aktivna {
+background-color: white;
+}
+ .content{
+     width: 100px;
+     height: 100px;
+     position: absolute;
+     top: 340px;
+ }
+ .notice {
+background-color: transparent;
+place-items: center;
+}
+
+.noticedrugi {
+width: 84%;
+height: auto;
+position: flex;
+margin: 0 10px;
+}
+
+.begikofolh3telefon {
+display: none;
+
+}
+
+.paragrafi {
+height: auto;
+display: flex;
+align-items: center;
+margin: 0 10px;
+width: 100%;
+gap: 20px;
+
+}
+
+.paragrafi h3 {
+margin-left: 150px;
+color: #f8c94c;
+background-color: rgb(0, 0, 0); /* tamna, poluprozirna */
+padding: 20px;
+border: 3px solid yellow;
+}
+.paragrafi pre {
+    margin-left: 1px;
+    width: 590px;
+    text-align: left;
+background-color: rgba(0, 0, 0, 0.811); /* Tamna, poluprozirna pozadina */
+border: 3px solid yellow;
+color: white !important; /* Dodaj !important za prioritet */
+font-family: 'Roboto', sans-serif;
+padding: 20px;
+
+white-space: pre-wrap; 
+height: 300px;
+}
+
+.naslovi {
+display: flex;
+align-items: center;
+gap: 10px;
+margin: 0 180px;
+
+}
+.naslovi h2{
+background-color: rgba(0, 0, 0, 0.667); /* Tamna, poluprozirna pozadina */
+padding: 20px;
+border: 3px solid yellow;
+color: #ffffff;
+}
+.begikofolh3 {
+margin-left: 400px;
+color: #0056b3;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sjena za bolju vidljivost */
+}
+
+.noticedrugi p {
+font-size: 14px;
+color: #333;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2); /* Sjena za bolju vidljivost */
+}
+
+.sekcije {
+width: 1300px;
+background-color: transparent; /* Svijetla siva pozadina */
+color: #333;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Dodavanje sjenke za bolji kontrast */
+}
+
+.naslovlokacija {
+align-items: center;
+display: flex;
+text-align: center;
+flex-direction: column;
+}
+
+.naslovlokacija h2 {
+color: #f8c94c;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sjena za bolju vidljivost */
+background-color: rgba(0, 0, 0, 0.667); /* Tamna, poluprozirna pozadina */
+padding: 10px;
+border: 3px solid yellow;
+}
+.naslovlokacija h3 {
+color: #f8c94c;
+text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3); /* Sjena za bolju vidljivost */
+background-color: rgba(0, 0, 0, 0.667); /* Tamna, poluprozirna pozadina */
+padding: 10px;
+border: 3px solid yellow;
+}
+
+@keyframes ulazSaLijeve {
+from {
+ transform: translateX(-100%);
+ opacity: 0;
+}
+to {
+ transform: translateX(0);
+ opacity: 1;
+}
+}
+
+@keyframes ulazSaDesne {
+from {
+ transform: translateX(100%);
+ opacity: 0;
+}
+to {
+ transform: translateX(0);
+ opacity: 1;
+}
+}
+
+.lijevastranaslika, .desnastranaslika {
+width: 100%; 
+display: flex;
+align-items: center;
+margin-bottom: 15px;
+opacity: 0;
+transition: opacity 0.5s ease;
+border-radius: 15px;
+padding: 10px;
+}
+
+.lijevastranaslika {
+display: flex;
+justify-content: flex-start;
+text-align: left;
+position: relative;
+}
+
+.lijevastranaslika.visible {
+animation: ulazSaLijeve 0.8s ease-out forwards;
+opacity: 1;
+}
+
+.desnastranaslika {
+justify-content: flex-end;
+text-align: left;
+position: relative;
+}
+
+.desnastranaslika.visible {
+animation: ulazSaDesne 0.8s ease-out forwards;
+opacity: 1;
+}
+
+.imglijeva {
+width: 630px;
+height: auto;
+margin: 0 10px;
+mask-size: cover;
+border-radius: 10px; /* Dodavanje zaobljenih ivica slikama */
+border: 2px solid yellow;
+}
+
+.imgdesna {
+width: 630px;
+height: auto;
+margin: 0 10px;
+mask-size: cover;
+border-radius: 10px; /* Dodavanje zaobljenih ivica slikama */
+border: 2px solid yellow;
+}
+
+.opisslikezapocetak {
+display: grid;
+margin-top: 10px;
+}
+.opisslikezapocetak h3{
+color: white;
+}
+.opisslikezapocetak span{
+color: white;
+font-size: 16px;
+margin-bottom: 5px;
+background-color: rgba(0, 0, 0, 0.616); /* tamna, poluprozirna */
+color: #fff;
+border: 3px solid yellow;
+padding: 15px;
+}
+.opisslikezapocetak button {
+padding: 10px;
+background-color: #f8c94c;
+color: #fff;
+border: 2px solid yellow;
+border-radius: 5px;
+cursor: pointer;
+transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.opisslikezapocetak button:hover {
+background-color: #438dd3;
+transform: scale(1.05);
+}
+
+
+
+
+ .partners, .news, .photo, .video, .competitions, .athletes, .organization {
+     padding: 20px;
+     text-align: center;
+ }
+ .partners img, .news img, .athletes img, .organization img {
+     height: 50px;
+     margin: 0 10px;
+ }
+ .competitions-content, .athletes-content, .organization-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .competitions-content img {
+     width: 100px;
+     height: auto;
+     margin-right: 20px;
+ }
+ .competitions-content .news, .athletes-content .news {
+     text-align: left;
+ }
+ .competitions-content .news h3, .athletes-content h2 {
+     font-size: 24px;
+     margin: 0;
+ }
+ .view-more {
+     text-align: right;
+     margin-top: 10px;
+ }
+ .view-more a {
+     text-decoration: none;
+     color: #000;
+     font-weight: bold;
+ }
+ .footer {
+     padding: 20px 0;
+     text-align: center;
+     align-items: center;
+     text-align: center;
+     justify-items: center;
+     background-color: #000000ca;
+     border-top: 3px solid yellow;
+     text-decoration: none; /* Uklanja podvlačenje linkova */
+ }
+ .footer img {
+     width: 100px;
+     height: auto;
+     margin: 0 10px;
+ }
+ .footer p {
+     margin: 5px 0;
+     color: white; /* Postavlja boju linkova na belo */
+     text-decoration: none; /* Uklanja podvlačenje linkova */
+ }
+ .footer a {
+color: white; /* Postavlja boju linkova na belo */
+text-decoration: none; /* Uklanja podvlačenje linkova */
+}
+
+.footer a:hover {
+color: yellow; /* Menja boju linka pri prelasku mišem */
+}
+ .raspored-slika{
+ width: 90%;
+ }
+ .raspored-unutra{
+     display: flex;
+flex-direction: column;
+align-items: center;
+ }
+ .slider-treneri-naslov {
+     color: white;
+     margin: 20px 0;
+     font-size: 32px;
+ }
+
+ .treneri-slider-okvir {
+     position: relative;
+     width: 100%;
+     margin: auto;
+     overflow: hidden;
+ }
+
+ .treneri-slider {
+     display: flex;
+     transition: transform 0.5s ease-in-out;
+ }
+
+ .treneri-slide {
+     min-width: 100%;
+     box-sizing: border-box;
+     display: flex;
+     justify-content: space-between;
+     gap: 40px;
+ }
+ .sectionathletes {
+display: flex;
+flex-direction: column; /* Kartice u kolonama, jedna ispod druge */
+align-items: center; /* Centriranje sadržaja unutar elementa po horizontali */
+justify-content: flex-start; /* Početak vertikalnog poravnanja */
+width: 1300px; /* Možete koristiti 100% širine ekrana */
+text-align: center;
+margin: 0 auto; /* Centriranje elementa na stranici */
+}
+
+.trener-kartica {
+background: rgba(0, 0, 0, 0.745);
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.478);
+text-align: center;
+width: 400px; /* Povećana širina kartica */
+padding: 20px; /* Povećan padding */
+border: 3px solid yellow;
+}
+
+ .trener-kartica img {
+     width: 100%;
+     border-radius: 10px;
+     height: 300px;
+     border: 2px solid yellow;
+ }
+
+ .trener-kartica h3 {
+     font-size: 20px;
+     margin: 10px 0;
+     color: white;
+ }
+
+ .trener-kartica p {
+     font-size: 14px;
+     color: rgb(255, 255, 255);
+ }
+
+ .trener-dugmad {
+     margin-top: 10px;
+ }
+
+ .trener-dugmad a {
+     text-decoration: none;
+     display: inline-block;
+     padding: 8px 12px;
+     border: 1px solid yellow;
+     border-radius: 20px;
+     margin: 5px;
+     color: rgb(255, 255, 255);
+     font-size: 14px;
+ }
+
+ .trener-dots {
+     display: flex;
+     justify-content: center;
+     margin-top: 10px;
+ }
+
+ .trener-dot {
+     height: 10px;
+     width: 10px;
+     margin: 0 5px;
+     background-color: #000000;
+     border-radius: 50%;
+     display: inline-block;
+     cursor: pointer;
+ }
+
+ .trener-dot.aktivan {
+     background-color: rgb(255, 255, 255);
+ }
+
+ .sectionathletestelefon{
+display: none;
+ }
+ 
+
+.novosti-kontejner img {
+height: 100px;
+width: 100px;
+}
+
+h1 {
+text-align: center;
+}
+
+.novosti-admin-dugme {
+display: none; /* Po defaultu skriveno */
+background-color: #007bff;
+color: white;
+padding: 10px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+margin-bottom: 10px;
+
+}
+
+.novosti-admin-dugme:hover {
+background-color: #0056b3;
+}
+
+.novosti-panel {
+display: none;
+flex-direction: column;
+gap: 10px;
+background: transparent;
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.pinned-label {
+color: #d9534f;
+font-weight: bold;
+margin-top: 5px;
+display: flex;
+}
+#novosti-naslov, #novosti-sadrzaj, #novosti-slika {
+width: 100%;
+padding: 10px;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+.novosti-dugme {
+background-color: #28a745;
+color: white;
+padding: 10px;
+border: none;
+cursor: pointer;
+border-radius: 5px;
+}
+
+.novosti-dugme:hover {
+background-color: #218838;
+}
+
+.zatvori {
+background-color: red;
+}
+
+.zatvori:hover {
+background-color: darkred;
+}
+
+/* Stil za sekciju novosti */
+#novosti {
+background-color: transparent; /* Svijetla pozadina za novosti */
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.novosti-kontejner {
+max-width: 1250px;  /* Ograničena širina kontejnera */
+margin: 60 20;  /* Centriranje kontejnera na stranici */
+padding: 40px;
+background-color: rgba(0, 0, 0, 0.567);  /* Bijela pozadina unutar kontejnera */
+border-radius: 10px; /* Zaokruženi uglovi */
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Lagana senka */
+border: 4px solid yellow;
+}
+
+.novosti-kontejner h1 {
+font-size: 2em;
+text-align: center;
+margin-bottom: 20px;
+color: #ffffff; /* Tamno siva boja za naslov */
+}
+
+.novosti-wrapper {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Automatsko podešavanje broja kolona */
+gap: 20px;
+margin-top: 20px;
+}
+
+.novosti-item {
+border: 1px solid #ccc;
+padding: 0px;
+border-radius: 8px;
+background-color: #cb0000;
+text-align: center;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+grid-template-columns: repeat(3, 1fr);
+}
+
+.novosti-item img {
+width: 100%;
+height: auto;
+border-radius: 5px;
+margin-bottom: 10px;
+}
+
+.novosti-item h2 {
+font-size: 18px;
+margin: 10px 0;
+}
+
+.novosti-item p {
+font-size: 14px;
+color: #555;
+}
+
+
+/* Dugme za brisanje novosti */
+.novosti-item button {
+border: none;
+padding: 10px 20px;
+border-radius: 5px;
+cursor: pointer;
+font-size: 1em;
+background-color: #007BFF;
+
+}
+
+.novosti-item button:hover {
+background-color: #007BFF;  /* Tamnija crvena pri hover-u */
+}
+.slikaEl{
+border-radius: 15px;
+}
+.news-container {
+display: flex;
+flex-wrap: wrap; /* Ovim omogućavamo da se novosti prikazuju u više redova, ako nema dovoljno mesta */
+gap: 15px; /* Razmak između novosti */
+}
+ .news-item {
+     width: 300px;
+     border: 3px solid yellow;
+     padding: 35px;
+     border-radius: 15px;
+     background-color: rgba(0, 0, 0, 0.578);
+     height: auto;
+     text-align: center;
+     margin-left: 10px;
+     margin-right: 10px;
+     color: white;
+ }
+
+button {
+padding: 10px 15px;
+margin-top: 10px;
+cursor: pointer;
+font-size: 14px;
+border: none;
+border-radius: 5px;
+transition: background-color 0.3s;
+}
+
+.news-item button {
+margin-right: 10px; /* Razmak između dugmadi */
+}
+
+button.edit-dugme {
+background-color: #007BFF;
+color: white;
+position: absolute;
+top: 10px;
+right: 80px;
+margin-right: 5px;
+}
+
+button.dugmeObrisi {
+background-color: #007BFF;
+color: white;
+position: absolute;
+top: 10px;
+right: 10px;
+margin-right: 5px;
+}
+
+button:hover {
+opacity: 0.8;
+}
+.modal {
+display: none;
+position: fixed;
+z-index: 1000;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+background-color: blue;
+padding: 20px;
+border-radius: 5px;
+width: 300px;
+margin: 15% auto;
+box-shadow: 0px 0px 10px gray;
+text-align: center;
+position: relative;
+}
+
+.modaledit {
+     display: none;
+     position: fixed;
+     z-index: 1000;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+
+     background-color: rgba(0, 0, 0, 0.8);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     overflow: hidden;  /* Sprječava skrolovanje za ceo modal */
+ }
+ .modal-contentedit {
+     
+     width: 80%;             /* Modal širina */
+max-width: 600px;       /* Maksimalna širina modala */
+max-height: 80vh;       /* Maksimalna visina modala (80% visine ekrana) */
+overflow-y: auto;       /* Omogućava skrolovanje unutar modala */
+padding: 20px;          /* Udaljenost sadržaja od ivica */
+background-color: 625f5f;
+border-radius: 8px;     /* Zaobljeni uglovi */
+position: relative;
+animation: fadeIn 0.3s ease-in-out;
+box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.322);
+
+background: #625f5f;
+ }
+
+.zatvori {
+position: absolute;
+top: 10px;
+right: 15px;
+font-size: 20px;
+cursor: pointer;
+}
+#otvori-modal {
+     display: none; /* Dugme je inicijalno sakriveno */
+     background-color: 007BFF;
+     color: white;
+     padding: 10px;
+     border-radius: 5px;
+ }
+ .modal {
+     display: none;
+     position: fixed;
+     z-index: 1000;
+     left: 0;
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.8);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+ .modal-content {
+     background: #625f5f;
+     padding: 20px;
+     border-radius: 12px;
+     width: 400px;
+     box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.322);
+     position: relative;
+     animation: fadeIn 0.3s ease-in-out;
+ }
+ @keyframes fadeIn {
+     from { opacity: 0; transform: scale(0.9); }
+     to { opacity: 1; transform: scale(1); }
+ }
+ .zatvori {
+     position: absolute;
+     top: 10px;
+     right: 15px;
+     font-size: 24px;
+     cursor: pointer;
+     color: #007BFF;
+ }
+ .zatvori:hover {
+     color: #007BFF;
+ }
+ input, textarea, button {
+     width: calc(100% - 20px);
+     padding: 10px;
+     margin: 10px 0;
+     border-radius: 8px;
+     border: none;
+     font-size: 16px;
+ }
+ input, textarea {
+     background: #292929;
+     color: #fff;
+ }
+ button {
+     background: #007BFF;
+     color: #fff;
+     cursor: pointer;
+     font-weight: bold;
+     width: auto;
+     margin: 5px 0;
+ }
+ button:hover {
+     background: #007BFF;
+ }
+ .modal-prikaz-novosti {
+display: none;
+position: fixed;
+z-index: 1000;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5);
+justify-content: center;
+align-items: center;
+}
+
+.modal-prikaz-novosti-content {
+max-width: 600px;
+width: 90%;
+padding: 20px;
+background: white;
+border-radius: 8px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.modal-prikaz-novosti img {
+width: 300px;
+height: 200px;
+border-radius: 8px;
+margin-bottom: 15px;
+}
+
+#modalPrikazNovostiOpisContainer {
+max-height: 300px;
+overflow-y: auto;
+width: 100%;
+padding: 10px;
+background: #f9f9f9;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+#pagination {
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+#pagination button {
+padding: 10px;
+margin: 0 10px;
+background-color: #007BFF;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+#pagination button:disabled {
+background-color: #d6d6d6;
+cursor: not-allowed;
+}
+
+#pagination span {
+align-self: center;
+font-size: 16px;
+}
+.hamburger {
+display: none; /* Sakriven na većim ekranima */
+flex-direction: column;
+justify-content: space-between;
+width: 25px;
+height: 25px;
+cursor: pointer;
+}
+
+.line {
+width: 100%;
+height: 4px;
+background-color: #333;
+border-radius: 5px;
+transition: 0.3s;
+}
+
+.mobile-menu {
+display: none; /* Početno sakrijte meni */
+flex-direction: column;
+align-items: center;
+}
+
+.mobile-menu a {
+text-decoration: none;
+padding: 10px;
+font-size: 18px;
+}
+.slider-treneri-naslovtelefon {
+margin: 20px 0;
+font-size: 32px;
+}
+
+.treneri-slider-okvirtelefon {
+position: relative;
+width: 80%;
+margin: auto;
+overflow: hidden;
+}
+
+.treneri-slidertelefon {
+display: flex;
+transition: transform 0.5s ease-in-out;
+}
+
+.treneri-slidetelefon {
+min-width: 100%;
+box-sizing: border-box;
+display: flex;
+justify-content: space-between;
+}
+
+.trener-karticatelefon {
+background: white;
+border-radius: 10px;
+padding: 20px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+text-align: center;
+width: 30%;
+}
+
+.trener-karticatelefon img {
+width: 100%;
+border-radius: 10px;
+height: 300px;
+}
+
+.trener-karticatelefon h3 {
+font-size: 20px;
+margin: 10px 0;
+}
+
+.trener-karticatelefon p {
+font-size: 14px;
+color: gray;
+}
+
+.trener-dugmadtelefon {
+margin-top: 10px;
+}
+
+.trener-dugmadtelefon a {
+text-decoration: none;
+display: inline-block;
+padding: 8px 12px;
+border: 1px solid black;
+border-radius: 20px;
+margin: 5px;
+color: black;
+font-size: 14px;
+}
+
+.trener-dotstelefon {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+}
+
+.trener-dottelefon {
+height: 10px;
+width: 10px;
+margin: 0 5px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+cursor: pointer;
+
+}
+
+.trener-dottelefon.aktivan {
+background-color: black;
+}
+
+.opisslikezapocetaktelefon{
+display: none;
+}
+
+table.tabela-raspored {
+margin-top: 50px;
+     width: 1305px;
+     border-collapse: collapse;
+     background: transparent;
+     background-color: #000000a5;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+     margin-bottom: 20px;
+     text-align: center;
+ }
+
+ th, td {
+     padding: 15px;
+     text-align: center;
+     border: 4px solid yellow;
+     color: white;
+ }
+
+ th {
+     background: #0056b3;
+     color: white;
+     text-transform: uppercase;
+ }
+
+ tr:hover {
+     background: #000000;
+ }
+
+ .edit-btn {
+     display: none;
+     padding: 10px 20px;
+     background: #0056b3;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-bottom: 30px;
+     border: 2px solid yellow;
+     border-radius: 10px;
+ 
+ }
+
+ .modaltabela {
+     display: none; /* Flexbox za centriranje sadržaja */
+justify-content: center; /* Horizontalno centriranje */
+align-items: center; /* Vertikalno centriranje */
+position: fixed;
+z-index: 1000;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Poluprovidna pozadina */
+overflow: hidden;
+text-align: center;
+ }
+
+ .modal-contenttebela {
+     background: url(img/pozadina.png);
+     background-image: url('img/pozadina.png');
+background-size: cover;
+background-position: left;
+background-attachment: fixed; /* ovo fiksira pozadinu */
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+     width: 95%;
+     max-width: 100%;
+     max-height: 85vh;
+     overflow-y: auto;
+     justify-items: center;
+ }
+
+ .close-btntabela {
+     float: right;
+     font-size: 20px;
+     cursor: pointer;
+     color: red;
+ }
+
+ .save-btntabela {
+     margin-top: 10px;
+     padding: 10px 20px;
+     background: #0056b3;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+ .modal-contenttebela h2{
+     background-color: #000000ae;
+     color: white;
+     border-radius: 15px;
+     padding: 15px;
+     border: 3px solid yellow;
+ }
+.raspored{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.edit-tabela{
+border-collapse: collapse;
+border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+     margin-bottom: 20px;
+     text-align: center;
+     background-color: #000000a5;
+}
+
+.edit-form{
+background: white;
+     padding: 20px;
+     border-radius: 10px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+     width: 95%;
+     max-width: 100%;
+     max-height: 85vh;
+     overflow-y: auto;
+     justify-items: center;
+     overflow-y: auto; 
+}
+#slika-preview {
+display: none;
+max-width: 100%;  /* Slika se neće širiti preko širine roditeljskog elementa */
+width: 300px;     /* Podesi željenu širinu */
+height: auto;     /* Zadrži proporcije slike */
+border: 2px solid black;
+
+}
+
+@media screen and (max-width: 768px) {
+body, html {
+width: 100%;
+height: 100%;
+     overflow-x: hidden;
+     background-image: url('img/pozadina.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed; /* ovo fiksira pozadinu */
+
+}
+.naslov{
+text-align: center;
+
+}
+.container {
+width: 100%;
+max-width: 100%; /* Sprječava dodatni prostor sa strane */
+flex-direction: column;
+height: 240px;
+}
+.slikalogo img{
+height: 50px;
+width: 50px;
+position: flex;
+top: 180px;
+z-index: 10;
+}
+.menu {
+ display: none; /* Sakrij meni ako nije potreban */
+}
+.naviga{
+ display: none;
+ text-align: center;
+
+}
+.slider-nav {
+    position: absolute;
+    bottom: 10px;           
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 10; /* Uveri se da je navigacija iznad slika */
+    }
+    
+    .slider-nav a {
+    width: 15px;
+    height: 15px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    }
+    .imglijeva {
+        width: 350px;
+        height: auto;
+        mask-size: cover;
+        border-radius: 10px; /* Dodavanje zaobljenih ivica slikama */
+        border: 2px solid yellow;
+        }
+        
+        .imgdesna {
+        width: 350px;
+        height: auto;
+        mask-size: cover;
+        border-radius: 10px; /* Dodavanje zaobljenih ivica slikama */
+        border: 2px solid yellow;
+        }
+        .opisslikezapocetaktelefon {
+            width: 350px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center; /* Horizontalno centriranje */
+            align-items: center;
+            }
+            .opisslikezapocetaktelefon h3{
+            color: white;
+            }
+            .opisslikezapocetaktelefon span{
+            color: white;
+            font-size: 16px;
+            margin-bottom: 5px;
+            background-color: rgba(0, 0, 0, 0.616); /* tamna, poluprozirna */
+            color: #fff;
+            border: 3px solid yellow;
+            padding: 15px;
+            }
+            .opisslikezapocetaktelefon button {
+            padding: 10px;
+            background-color: #f8c94c;
+            color: #fff;
+            border: 2px solid yellow;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+            
+            .opisslikezapocetaktelefon button:hover {
+            background-color: #438dd3;
+            transform: scale(1.05);
+            }
+            
+            
+.javljanje{
+ display: none;
+}
+.header {
+     display: flex;
+     justify-content: normal;
+     align-items: center;
+     gap: 10%;
+     height: 40px;
+     background-color: transparent;
+ }
+.hamburger{
+ display: flex;
+ cursor: pointer;
+}
+.hamburger line{
+ width: 20px;
+ height: 5px;
+ margin: 5px;
+ background-color: white;
+}
+.line{
+ background-color: white;
+}
+/* Animacija za aktivni meni */
+.active .line:nth-child(1) {
+transform: translateY(10px) rotate(45deg);
+}
+
+.active .line:nth-child(2) {
+opacity: 0;
+}
+
+.active .line:nth-child(3) {
+transform: translateY(-10px) rotate(-45deg);
+}
+.mobile-menu {
+display: none;
+flex-direction: column;
+position: absolute;
+top: 60px;
+left: 0;
+width: 60%;
+background-image: url('img/pozadina.png');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment: fixed; /* ovo fiksira pozadinu */
+box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+padding: 15px 0;
+z-index: 1000;
+border: 2px solid black;
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+color: white;
+}
+
+.mobile-menu img {
+height: 40px;  /* Podesi visinu slika */
+margin: 10px;  /* Razmak između slika */
+}
+
+.mobile-menu a {
+display: block;
+padding: 10px 0;
+color: #ffffff;
+text-decoration: none;
+font-size: 18px;
+text-align: center;
+transition: background-color 0.3s ease;
+}
+
+.mobile-menu a:hover {
+background-color: #f4f4f4;
+}
+
+/* Slike će biti raspoređene horizontalno */
+.mobile-menu .social-icons {
+display: flex;
+justify-content: center;  /* Centriraj slike */
+gap: 15px; /* Razmak između slika */
+}
+.mobile-menu.active {
+ display: flex;
+}
+
+/* Animacija za aktivni meni */
+.active .line:nth-child(1) {
+transform: translateY(10px) rotate(45deg);
+}
+
+.active .line:nth-child(2) {
+opacity: 0;
+}
+
+.active .line:nth-child(3) {
+transform: translateY(-10px) rotate(-45deg);
+}
+.news-item {
+     width: 245px;
+     border: 1px solid yellow;
+     padding: 25px;
+     border-radius: 5px;
+     background-color: #00000086;
+     height: auto;
+ }
+ .treneri-slidertelefon {
+ display: flex;
+}
+
+.treneri-slidetelefon {
+ min-width: 100%; /* Na mobilnim uređajima svaki slajd zauzima celu širinu */
+}
+
+.trener-karticatelefon {
+ width: 100%;
+ align-items: center;
+background-color: #00000092;
+ border: 3px solid yellow;
+}
+    .sectionathletestelefon{
+     text-align: center;
+display: block;
+align-items: center;
+margin: 0 auto;
+width: 80%;
+ }
+ .sectionathletes{
+     display: none;
+ }
+
+.trener-karticatelefon h3 {
+    color: white;
+font-size: 16px;
+}
+
+.trener-karticatelefon p {
+    color: #ffffff;
+font-size: 12px;
+}
+.trener-karticatelefon img{
+    
+border: 2px solid yellow;
+}
+.slider-treneri-naslovtelefon{
+    color: white;
+}
+.trener-dugmadtelefon a {
+font-size: 12px;
+padding: 6px 12px;
+}
+.notice {
+background-color: transparent;
+display: flex;  /* Koristi flexbox */
+flex-direction: column;  /* Postavlja elemente vertikalno */
+align-items: center;  /* Centriranje po horizontali */
+padding: 20px;
+justify-content: center;    /* Centriranje duž horizontalne ose */
+text-align: center;
+}
+
+.noticedrugi {
+width: 80%;
+height: auto;
+margin: 10px 0; /* Razmak između elemenata */
+justify-content: center;
+text-align: center;
+}
+.paragrafi {
+height: auto;
+display: flex; /* Ostavlja flexbox */
+flex-direction: column; /* Postavlja elemente vertikalno */
+align-items: center; /* Centriranje */
+margin: 10px 0; /* Dodatni razmak */
+text-align: center;
+}
+.paragrafi h3 {
+margin: 0 auto; /* Osigurava da je centriran */
+text-align: center;
+}
+.begikofolh3 {
+display: none;
+}
+.naslovi{
+display: block;
+margin: 10 10px;
+
+}
+.begikofolh3telefon{
+display: block;
+color: #007BFF;
+}
+@keyframes ulazSaLijevetel {
+from {
+transform: translateX(-100%);
+opacity: 0;
+}
+to {
+transform: translateX(0);
+opacity: 1;
+}
+}
+
+@keyframes ulazSaDesnetel {
+from {
+transform: translateX(100%);
+opacity: 0;
+}
+to {
+transform: translateX(0);
+opacity: 1;
+}
+}
+
+.lijevastranaslika,
+.desnastranaslika {
+flex-direction: column;
+text-align: center;
+align-items: center;
+width: 100px;  /* Postavi širinu na 100% na manjim ekranima */
+margin: 0 auto; /* Centriranje na manjim ekranima */
+opacity: 0;
+will-change: transform, opacity;
+}
+
+.lijevastranaslika.visible {
+animation: ulazSaLijevetel 0.8s ease-out forwards;
+}
+
+.desnastranaslika.visible {
+animation: ulazSaDesnetel 0.8s ease-out forwards;
+}
+.opisslikezapocetak{
+ display: none;
+}
+.opisslikezapocetaktelefon {
+display: flex;             /* Postavi flexbox na roditelja */
+flex-direction: column;    /* Postavi elemente (tekst i dugme) u vertikalni raspored */
+justify-content: center;   /* Centriraj elemente vertikalno */
+align-items: center;       /* Centriraj elemente horizontalno */
+text-align: center;        /* Centriraj tekst unutar elementa */
+padding: 20px;
+}
+.opisslikezapocetaktelefon button{
+ margin-top: 15px;
+ display: flex;
+background-color: #007BFF;
+color: white;
+border: none;
+cursor: pointer;
+}
+table.tabela-raspored {
+ width: 95%; /* Tabela zauzima 95% širine ekrana */
+ font-size: 12px; /* Manji font za mobilne uređaje */
+}
+
+/* Smanjenje paddinga u tabeli za manji ekran */
+th, td {
+ padding: 3px; /* Manji padding */
+ font-size: 6px; /* Još manji font na telefonima */
+}
+
+/* Dugme za editovanje i za čuvanje */
+.edit-btn, .save-btntabela {
+ width: 40%; /* Dugme zauzima punu širinu */
+ padding: 10px 15px;
+ font-size: 14px;
+}
+
+/* Prilagodba modala */
+.modal-contenttebela {
+ width: 30px;
+ padding: 15px;
+}
+
+/* Prilagodba za dugme za zatvaranje u modalnom prozoru */
+.close-btntabela {
+ font-size: 18px;
+}
+
+}
